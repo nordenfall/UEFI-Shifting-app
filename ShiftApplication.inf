@@ -1,0 +1,24 @@
+[Defines]
+ INF_VERSION                    = 0x00010005
+ BASE_NAME 			= ShiftApplication
+ FILE_GUID 			= 7d925a11-e83c-4856-a0c3-0c36ddaf7233
+ MODULE_TYPE 			= UEFI_APPLICATION
+ VERSION_STRING 		= 1.0
+ ENTRY_POINT 			= UefiMain
+#
+# The following information is for reference only and not required by the build tools.
+#
+
+
+[Sources]
+ ShiftApplication.c
+
+[Packages]
+ MdePkg/MdePkg.dec
+
+[LibraryClasses]
+ UefiApplicationEntryPoint
+ UefiLib
+ 
+[Protocols]
+ gEfiShellParametersProtocolGuid
