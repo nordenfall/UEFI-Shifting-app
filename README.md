@@ -23,13 +23,13 @@ ___
 3. ### Writing the original into the UINT8 Buffer;
 4. ### Shifting bits in the Buffer;
 5. ### Rewriting the file with a new information;
-6. ### Freeing some of the memory pool and closing the file;
+6. ### Freeing some of the memory pool and closing the file.
 _____
 ## ERRORS & BUGS CATCHING JOURNAL
 > ### The list of known issues. Ticked box means the solved problem.
-- [ ] Unable to operate non-txt files;
-- [ ] Unable to opearate relativly big files (like over 200kB);
-- [ ] Unable to process incorrect parameter input. 
+- [ ] Unable to operate non-txt files
+- [ ] Unable to opearate relativly big files (like over 200kB)
+- [ ] Unable to process incorrect parameter input
 _____
 
 [^1]:Not neccesary, but it would be easier to find the file.
