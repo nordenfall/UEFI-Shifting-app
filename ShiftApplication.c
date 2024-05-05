@@ -61,7 +61,7 @@ EFI_STATUS EFIAPI UefiMain (IN EFI_HANDLE ImageHandle, IN EFI_SYSTEM_TABLE *Syst
           return Status;
         }
    } else {
-      Print(L"Incorrect argument\n");
+      Print(L"Incorrect argument (unknow symbol %c)\n", ShiftParameter[0]);
       return EFI_INVALID_PARAMETER;
    }
  } else {
@@ -182,7 +182,11 @@ EFI_STATUS EFIAPI UefiMain (IN EFI_HANDLE ImageHandle, IN EFI_SYSTEM_TABLE *Syst
    Print(L"ERROR ON FREEING HANDLES\n");
  }
  //Закрытие файла
- File->Close(File);
+ Status = File->Close(File);
+ if (EFI_ERROR(Status)){
+  Print(L"ERROR ON CLOSING FILE (how did you do that)\n");
+  return Status;
+ }
  
  Print(L"CLOSING FILE DONE ====================\n\n"); 
  return EFI_SUCCESS;
