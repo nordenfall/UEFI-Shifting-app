@@ -27,9 +27,9 @@ ___
 _____
 ## ERRORS & BUGS CATCHING JOURNAL
 > ### The list of known issues. Ticked box means the solved problem.
+- [x] Unable to process incorrect parameter input
 - [ ] Unable to operate non-txt files
 - [ ] Unable to opearate relativly big files (like over 200kB)
-- [ ] Unable to process incorrect parameter input
 _____
 
 [^1]:Not neccesary, but it would be easier to find the file.
